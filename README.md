@@ -39,6 +39,11 @@ body
 id
 Every time a new idea is created, it should be added to a list that represents your data model.
 
+create a function that creates an object based on three key value pairs, title and body. id can be saved as well based on (id = date.now())
+could make another function that will push that object into an array
+the array should display through a grid in the body of the html
+maybe all of the header could be have the input information, body would only host the array? 
+
 iteration 1: Adding ideas
 When a user fills out both inputs and clicks “Save”:
 a new idea should be added to the data model.
@@ -51,11 +56,17 @@ Notes:
 You can choose what the layout looks like if more then 3 cards are added.
 You can choose how to handle titles and bodies that are longer than what fits on the card. There are lots of ways to handle this.
 
+create an if statement that says it wont save the idea if the title or body is undefined. 
+build in functiuonality that disallows identical input for title and body of ideas
+
 iteration 2: Deleting ideas
 A delete button should be visible on all idea cards now that match the comp above.
 When a user clicks the delete button:
 that idea should be removed from the data model.
 that idea card should be removed from the page.
+
+create a css element that puts a delete button onto the idea cards. 
+event listener to listen for a click
 
 iteration 3: Favoriting Ideas
 A star button should be visible on all idea cards now that match the comp above.
@@ -66,6 +77,12 @@ orange: favorited
 white: not favorited
 When an idea is created, it should start not favorited.
 
+star button on each idea
+toggle css method to flip between white and orange
+if toggled idea, it pushes id into a new array
+manipulate DOM to listen for click,
+favorite ideas could be pulled from idea array to prevent duplicate idea showing up?
+
 iteration 4: filtering ideas
 A filter button should be visible on the side bar to match the comp above.
 When a user clicks the “Show Starred Ideas” button:
@@ -74,6 +91,8 @@ the text on the button should change to “Show All Ideas”
 When the user clicks the “Show All Ideas” button:
 all ideas should be visible again
 the text on the button should change to “Show Starred Ideas”
+
+show starred ideas button could rearrange displayed body to put the favorites array before the ideas array
 
 iteration 5: Searching Ideas (extensions)
 A search bar should be visible on the page to match the comp above.
