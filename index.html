@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-    
+        <link rel="stylesheet" href="./styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-            
+        <aside class="left-side-section">
+            <h1 class="Idea-Box" >IdeaBox</h1>
+            <button class="starred-button hidden" type="button" name="show-starred-button">Show Starred Ideas</button>
+        </aside>  
+        <main class="right-section"> 
+            <section class="top-section">
+                <form class="textbox">
+                    <!-- need to do an input for text box! 
+                    need one for title 
+                    and body-->
+                    <!-- how to put the h1 title in this? -->
+                    <h2>Title</h2>
+                    <input class="box" type="text">
+                    <label for="title"></label><br>
+                </form>
+                <form class="textbox">
+                    <h2>Body</h2>
+                    <input class="box" type="text">
+                    <label for="title"></label><br>
+                </form>
+                <button class="save-button" type="button" name="save">Save</button>
+            </section>
+            <section class="bottom-section">
+                <section class="dog-staches hidden">
+                    <article class="user-idea">
+                        <header class="star"></header>
+                        <h2>Dog Staches</h2>
+                        <p>Dogs should have mustaches! They'd be so cute and regal!</p>
+                    </article>
+                </section>
+                <section class="cat-hats hidden">
+                    <article class="user-idea">   
+                        <header class="star"></header>
+                        <h2>Cat Hats</h2>
+                        <p>Little caps for cats to make their little heads look even sweeter</p>
+                    </article>
+                </section>
+                <section class="pom-app hidden">
+                    <article class="user-idea">   
+                        <header class="star"></header>
+                        <h2>Pom App</h2>
+                        <p>An app that forces me to take a pom by ejecting me out of my chair</p>
+                    </article>
+                </section>
+            </section>
+        </main>
     </body>
+    <script type="text/javascript" src="main.js"></script>
 </html>
