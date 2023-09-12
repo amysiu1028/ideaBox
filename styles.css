@@ -10,7 +10,6 @@ White: #FFFFFF */
 * {
    margin: 0;
    padding: 0;
-   
 }
 
 body {
@@ -21,11 +20,17 @@ body {
    min-height: 100vh;
    min-width: 100vh;
    display: flex;
+   font-family: 'Poppins', sans-serif;
 }
 
 .left-side-section {
-   background-color: #1F1F3C
+   background-color: #1F1F3C;
+   font-size: 40px;
 }
+
+.left-side-section > h1 {
+    font-size: 40px;
+ }
 
 .right-section {
     width: 100%;
