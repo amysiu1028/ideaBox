@@ -61,11 +61,12 @@ function showIdeas(){
 
         var starButton = document.createElement("button")
         starButton.classList.add("star-button")
-        starButton.innerHTML = '<img src="/assets/star.svg" alt="Star Icon">'; 
+        starButton.innerHTML = '<img src="assets/star.svg" alt="Star Icon">'; 
 
         var removeButton = document.createElement("button")
         removeButton.classList.add("remove-button")
-        removeButton.innerHTML = '<img src="/assets/delete.svg" alt="Delete Icon">'; 
+        removeButton.innerHTML = '<img src="assets/delete.svg" alt="Delete Icon">'; 
+        
 
         cardBanner.appendChild(starButton)
         cardBanner.appendChild(removeButton)
@@ -117,15 +118,29 @@ saveButton.addEventListener("mouseout", function() {
 //iteration 2: starting! BUt not sure what to do.... 
 //when user clicks delete button
 var removeButton = document.querySelector('.remove-button')
+console.log(removeButton)
 
 //add event
-removeButton.addEventListener('click', deleteCard)
+removeButton.addEventListener('click', function() {
+    console.log("Hi 1")
+});
 //function should delete card user clicks card
-function deleteCard(ideasArray) {
+//if I click image, then remove entire idea card
+
+function deleteCard(event) {
+    // update data model = ideasArray
+    // update DOM = innerHTML?
+
     for (var i=0; i<ideasArray.length;i++) {
-        if ('click') {
-            ideasArray.splice(i)
+        console.log("Hi")
+        if (event.target.classList.contains('.remove-button')) {
+            ideasArray.splice(i,1); //update datamodel
+            event.target.closest('.card').remove();
         }
     }
-    return ideasArray
+    removeButton.innerHTML = "" //can target closest class or class element
+    // var card = document.querySelector('.card')
+    // card.innerHTML =  .remove()//update DOM
+    // return ideasArray
 }
+
