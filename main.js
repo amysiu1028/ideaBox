@@ -1,5 +1,6 @@
  //querySelectors:
 var saveButton = document.querySelector('.save-button');// var userBodyInput = document.getElementById('input-body');
+var otherSaveButton = document.querySelector('.other-save-button')
 var inputTitle = document.getElementById("input-title")
 var inputBody = document.getElementById("input-body")
 var displayCards = document.querySelector('.card-grid')
@@ -32,7 +33,7 @@ saveButton.addEventListener("click",function(e){
     inputTitle.value = ""
     inputBody.value = ""
     }
-    showIdeas() //showNewIdea(title,body);
+    showIdeas()
 })
 
 //addEventHandlers:
@@ -93,4 +94,42 @@ function hideCard(displayCards) {
     } else {
         displayCards.classList.add("hidden")
     } 
+}
+//hovering over: mouseover, mouseleave
+
+saveButton.addEventListener("mouseover", function() {
+    var title = inputTitle.value
+    var body = inputBody.value
+    if (!title && !body) {
+        saveButton.classList.add("hidden")
+        otherSaveButton.classList.toggle("hidden")
+        saveButton.style.cursor = 'not-allowed';
+    } 
+})
+
+saveButton.addEventListener("mouseout", function() {
+    saveButton.style.backgroundColor = 'dark purple';
+    else if (title && body) {
+        saveButton.classList.remove("hidden")
+        otherSaveButton.classList.add("hidden")
+    }
+})
+
+// When a user tries to click “Save” with an empty Title or Body input field:
+// the “Save” button is disabled and unable to be clicked. It’s clear to the user when the button is disabled because it is a lighter color and the cursor is not a pointer when they hover over it.
+// a new idea card should not appear.
+
+//when user clicks delete button
+var removeButton = document.querySelector('.remove-button')
+
+//add event
+removeButton.addEventListener('click', deleteCard)
+//function should delete card user clicks card
+function deleteCard(ideasArray) {
+    for (var i=0; i<ideasArray.length;i++) {
+        if ('click') {
+            ideasArray.splice(i)
+        }
+    }
+    return ideasArray
 }
