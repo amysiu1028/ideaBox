@@ -15,18 +15,27 @@ saveButton.addEventListener('click', function(event) { //invoke after click
     var newIdea = createNewIdea(title,body);
     addNewIdea(newIdea);
     showNewIdea(title,body);
-    removeInputs(title,body);
+    // removeInputs(title,body);
 });
 
 //addEventHandlers:
-function createNewIdea(title,body) {
-    return newIdea = {
-        title: title,
-        body: body,
-        id: Date.now() //gives us a timestamp to make each input unique
-    }
-}
+var ideasArray = []
+var FavoriteIdeas = []
 
+var inputTitle = document.getElementById("input-title").value 
+var inputBody = document.getElementById("input-body").value
+var id = Date.now()
+
+function createNewIdea(title,body){
+    var newIdea = {
+        title:title,
+        body:body,
+        id:Date.now()
+    }
+    ideasArray.push(newIdea)
+    input-title.value = ""
+    input-body.value = ""
+}
 function addNewIdea(newIdea) {  
     ideas.push(newIdea)
     console.log(ideas, "ideas")
@@ -43,13 +52,13 @@ function showNewIdea(title,body) {
     // console.log(displayIdeasHere, "displayIdeas")
     console.log(title)
     console.log(body)
-    removeInputs(title,body);
+    // removeInputs(title,body);
 }
 
-function removeInputs(title,body) {
-    title.classList.add('hidden');
-    body.classList.add('hidden');
-}
+// function removeInputs(title,body) {
+//     title.classList.add('hidden');
+//     body.classList.add('hidden');
+// }
 //1. function should display card and hide the user input.values title and body
 //2. add condition, if title.value = "" and body.value = ""
 //Disable Save button.... should hide the original button and other one should 
