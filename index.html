@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    
-    </head>
-    <body>
-            
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Idea Box</title>
+</head>
+<body>
+    <aside class="main-header">
+        <h1 class="header-title">IdeaBox</h1>
+        <button class="show-starred-ideas">Show Starred Ideas</button>
+    </aside>
+    <main>
+        <section>
+            <form class="idea-form">
+                <article class="title-container">
+                    <label class="label" for="input-title">Title</label>
+                    <input class="title-input" type="text" id="input-title" name="input-title">
+                </article>
+                <article class="body-container">
+                    <label class="label" for="input-body">Body</label>
+                    <input class="body-input" type="text" id="input-body" name="input-body">
+                </article>   
+                    <button class="save-button">Save</button>
+                    <button class="other-save-button hidden">Save</button>
+            </form>
+        </section>
+        <section class="bottom-section"> 
+            <section class="card-grid hidden">
+                <div class="card">
+                    <div class="card-banner">
+                        <button class="star-button">
+                            <img src="/assets/star.svg" alt="Star Icon">
+                        </button>
+                        <button class="remove-button">
+                            <img src="/assets/delete.svg" alt="Delete Icon">
+                        </button>
+                    </div><br>
+                    <h2 class="card-title"></h2><br>
+                    <p class="card-body"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
 </html>
