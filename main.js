@@ -108,17 +108,13 @@ saveButton.addEventListener("mouseover", function() {
 })
 
 saveButton.addEventListener("mouseout", function() {
-    saveButton.style.backgroundColor = 'dark purple';
-    else if (title && body) {
-        saveButton.classList.remove("hidden")
-        otherSaveButton.classList.add("hidden")
-    }
+    saveButton.classList.remove("hidden");
+    otherSaveButton.classList.add("hidden");
+    saveButton.style.cursor = 'pointer';
 })
 
-// When a user tries to click “Save” with an empty Title or Body input field:
-// the “Save” button is disabled and unable to be clicked. It’s clear to the user when the button is disabled because it is a lighter color and the cursor is not a pointer when they hover over it.
-// a new idea card should not appear.
 
+//iteration 2: starting! BUt not sure what to do.... 
 //when user clicks delete button
 var removeButton = document.querySelector('.remove-button')
 
