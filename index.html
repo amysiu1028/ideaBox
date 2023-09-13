@@ -1,61 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <aside class="left-side-section">
-            <h1 class="idea-box" >IdeaBox</h1>
-            <section>
-                <button class="starred-button" type="button" name="show-starred-button">Show Starred Ideas</button>
-            </section>
-            
-        </aside>  
-        <main class="right-section"> 
-            <section class="top-section">
-                <form class="textbox">
-                    <!-- need to do an input for text box! 
-                    need one for title 
-                    and body-->
-                    <!-- how to put the h1 title in this? -->
-                    <h2>Title</h2>
-                    <input class="box" type="text">
-                    <label for="title"></label><br>
-                </form>
-                <form class="textbox">
-                    <h2>Body</h2>
-                    <input class="box" type="text">
-                    <label for="title"></label><br>
-                </form>
-                <button class="save-button" type="button" name="save">Save</button>
-            </section>
-            <section class="bottom-section">
-                <section class="dog-staches hidden">
-                    <article class="user-idea">
-                        <header class="star"></header>
-                        <h2>Dog Staches</h2>
-                        <p>Dogs should have mustaches! They'd be so cute and regal!</p>
-                    </article>
-                </section>
-                <section class="cat-hats hidden">
-                    <article class="user-idea">   
-                        <header class="star"></header>
-                        <h2>Cat Hats</h2>
-                        <p>Little caps for cats to make their little heads look even sweeter</p>
-                    </article>
-                </section>
-                <section class="pom-app hidden">
-                    <article class="user-idea">   
-                        <header class="star"></header>
-                        <h2>Pom App</h2>
-                        <p>An app that forces me to take a pom by ejecting me out of my chair</p>
-                    </article>
-                </section>
-            </section>
-        </main>
-    </body>
-    <script type="text/javascript" src="main.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Idea Box</title>
+</head>
+<body>
+    <aside class="main-header">
+        <h1 class="header-title">IdeaBox</h1>
+        <button class="show-starred-ideas">Show Starred Ideas</button>
+    </aside>
+    <main>
+        <section>
+            <form class="idea-form">
+                <article class="title-container">
+                    <label class="label" for="input-title">Title</label>
+                    <input class="title-input" type="text" id="input-title" name="input-title">
+                </article>
+                <article class="body-container">
+                    <label class="label" for="input-body">Body</label>
+                    <input class="body-input" type="text" id="input-body" name="input-body">
+                </article>   
+                    <button class="save-button">Save</button>
+            </form>
+        </section>
+        <section class="card-grid">
+            <!-- add cards here -->
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
 </html>
