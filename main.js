@@ -1,30 +1,36 @@
 //querySelectors:
-var saveButton = document.querySelector('.save-button');
-var userTitleInput = document.getElementById('input-title');
-var userBodyInput = document.getElementById('input-body');
+var saveButton = document.querySelector('.save-button');// var userBodyInput = document.getElementById('input-body');
+var inputTitle = document.getElementById("input-title")
+var inputBody = document.getElementById("input-body")
 var displayIdeasHere = document.querySelector('.card-grid')
 //Variables:
-var ideas = []
+var ideasArray = []
+var favoriteIdeas = []
 
 //addEventListeners:
 // window.addEventListener('load',);
-saveButton.addEventListener('click', function(event) { //invoke after click
-    event.preventDefault();
-    var title = userTitleInput.value; //capture the user value for title when button is clicked
-    var body = userBodyInput.value;
-    var newIdea = createNewIdea(title,body);
-    addNewIdea(newIdea);
-    showNewIdea(title,body);
-    // removeInputs(title,body);
-});
+saveButton.addEventListener("click",function(e){
+    e.preventDefault()
+    
+    var title = inputTitle.value
+    var body = inputBody.value
 
+    if (title && body){
+        for (var i =0;i<ideasArray.length;i++){
+            if (ideasArray[i].title === title && ideasArray[i].body === body) {
+            alert("A similar idea already exists, maybe try something else?")
+        inputTitle.value = ""
+        inputBody.value = ""
+        return
+        }
+    }
+    createNewIdea(title,body)
+    inputTitle.value = ""
+    inputBody.value = ""
+    }showIdeas()
+})
 //addEventHandlers:
-var ideasArray = []
-var FavoriteIdeas = []
 
-var inputTitle = document.getElementById("input-title").value 
-var inputBody = document.getElementById("input-body").value
-var id = Date.now()
 
 function createNewIdea(title,body){
     var newIdea = {
@@ -33,27 +39,53 @@ function createNewIdea(title,body){
         id:Date.now()
     }
     ideasArray.push(newIdea)
-    input-title.value = ""
-    input-body.value = ""
-}
-function addNewIdea(newIdea) {  
-    ideas.push(newIdea)
-    console.log(ideas, "ideas")
-    return ideas
 }
 
-function showNewIdea(title,body) {
-    displayIdeasHere.innerHTML = `
-    <article class="article">
-        <header class="star" ></header>
-        <h2>${title}</h2>
-        <p>${body}</p>
-    </article>`;
-    // console.log(displayIdeasHere, "displayIdeas")
-    console.log(title)
-    console.log(body)
-    // removeInputs(title,body);
+function showIdeas(){
+    displayIdeasHere.innerHTML= ""
+
+    for (var i=0; i<ideasArray.length;i++){
+        var idea = ideasArray[i]
+
+        var card = document.createElement("div")
+        card.classList.add("card")
+
+        var cardBanner = document.createElement("div")
+        cardBanner.classList.add("card-banner")
+
+        var starButton = document.createElement("button")
+        starButton.classList.add("star-button")
+        starButton.innerHTML = '<img src="/assets/star.svg" alt="Star Icon">';
+
+        var removeButton = document.createElement("button")
+        removeButton.classList.add("remove-button")
+        removeButton.innerHTML = '<img src="/assets/delete.svg" alt="Delete Icon">';
+
+        cardBanner.appendChild(starButton)
+        cardBanner.appendChild(removeButton)
+
+        var h2 = document.createElement("h2")
+        h2.textContent = idea.title
+        h2.classList.add("card-title")
+
+        var p = document.createElement("p")
+        p.textContent = idea.body
+        p.classList.add("card-body")
+
+        card.appendChild(cardBanner)
+        card.appendChild(h2)
+        card.appendChild(p)
+
+        displayIdeasHere.appendChild(card)
+    }
+    if (ideasArray.length > 0){
+        displayIdeasHere.classList.remove("hidden")
+    } else {
+        displayIdeasHere.classList.add("hidden")
+    } 
 }
+
+
 
 // function removeInputs(title,body) {
 //     title.classList.add('hidden');
