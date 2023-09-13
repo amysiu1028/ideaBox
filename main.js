@@ -15,6 +15,7 @@ saveButton.addEventListener('click', function(event) { //invoke after click
     var newIdea = createNewIdea(title,body);
     addNewIdea(newIdea);
     showNewIdea(title,body);
+    removeInputs(title,body);
 });
 
 //addEventHandlers:
@@ -38,9 +39,21 @@ function showNewIdea(title,body) {
         <header class="star" ></header>
         <h2>${title}</h2>
         <p>${body}</p>
-    </article>`
-    console.log(displayIdeasHere, "displayIdeas")
+    </article>`;
+    // console.log(displayIdeasHere, "displayIdeas")
+    console.log(title)
+    console.log(body)
+    removeInputs(title,body);
 }
+
+function removeInputs(title,body) {
+    title.classList.add('hidden');
+    body.classList.add('hidden');
+}
+//1. function should display card and hide the user input.values title and body
+//2. add condition, if title.value = "" and body.value = ""
+//Disable Save button.... should hide the original button and other one should 
+//appear the other one, and no card should appear
 
 
 //iteration 1:
@@ -53,6 +66,11 @@ function showNewIdea(title,body) {
 // Notes:
 // You can choose what the layout looks like if more then 3 cards are added.
 // You can choose how to handle titles and bodies that are longer than what fits on the card. There are lots of ways to handle this.
+
+//1. function should display card and hide the user input.values title and body
+//2. add condition, if title.value = "" and body.value = ""
+//Disable Save button.... should hide the original button and other one should 
+//appear the other one, and no card should appear
 
 //iteration 0: Basic Layout
 // When the page loads, we should see: a title, two inputs, and a button, a page layout and colors that match the comp above. When a user clicks "Save," a new idea object should be created and logged to the console. The idea object should have: title body id. Every time a new idea is created, it should be added to a list that represents your data model.
