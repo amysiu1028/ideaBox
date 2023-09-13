@@ -1,11 +1,14 @@
-//querySelectors:
+ //querySelectors:
 var saveButton = document.querySelector('.save-button');// var userBodyInput = document.getElementById('input-body');
 var inputTitle = document.getElementById("input-title")
 var inputBody = document.getElementById("input-body")
-var displayIdeasHere = document.querySelector('.card-grid')
-//Variables:
+var displayCards = document.querySelector('.card-grid')
+
+//Variables: 
 var ideasArray = []
-var favoriteIdeas = []
+var FavoriteIdeas = []
+var displayAllIdeas = []
+var id = Date.now()
 
 //addEventListeners:
 // window.addEventListener('load',);
@@ -17,35 +20,37 @@ saveButton.addEventListener("click",function(e){
 
     if (title && body){
         for (var i =0;i<ideasArray.length;i++){
+            // If a similar idea already exists, show an alert
             if (ideasArray[i].title === title && ideasArray[i].body === body) {
             alert("A similar idea already exists, maybe try something else?")
         inputTitle.value = ""
         inputBody.value = ""
-        return
+        return //exits function
         }
     }
     createNewIdea(title,body)
     inputTitle.value = ""
     inputBody.value = ""
-    }showIdeas()
+    }
+    showIdeas() //showNewIdea(title,body);
 })
+
 //addEventHandlers:
-
-
 function createNewIdea(title,body){
     var newIdea = {
         title:title,
         body:body,
-        id:Date.now()
+        id: id,
+        favorited: false,
     }
     ideasArray.push(newIdea)
 }
 
 function showIdeas(){
-    displayIdeasHere.innerHTML= ""
+    displayCards.innerHTML= "" //clearing DOM: the displayCard container at card-grid
 
     for (var i=0; i<ideasArray.length;i++){
-        var idea = ideasArray[i]
+        var idea = ideasArray[i] //gets each index which is an object
 
         var card = document.createElement("div")
         card.classList.add("card")
@@ -55,87 +60,37 @@ function showIdeas(){
 
         var starButton = document.createElement("button")
         starButton.classList.add("star-button")
-        starButton.innerHTML = '<img src="/assets/star.svg" alt="Star Icon">';
+        starButton.innerHTML = '<img src="/assets/star.svg" alt="Star Icon">'; 
 
         var removeButton = document.createElement("button")
         removeButton.classList.add("remove-button")
-        removeButton.innerHTML = '<img src="/assets/delete.svg" alt="Delete Icon">';
+        removeButton.innerHTML = '<img src="/assets/delete.svg" alt="Delete Icon">'; 
 
         cardBanner.appendChild(starButton)
         cardBanner.appendChild(removeButton)
 
         var h2 = document.createElement("h2")
-        h2.textContent = idea.title
+        h2.textContent = idea.title //sets the text content of <h2> element to the object's title in ideaArray[i]
         h2.classList.add("card-title")
 
         var p = document.createElement("p")
-        p.textContent = idea.body
+        p.textContent = idea.body // sets the text content of the <p> element to the value of idea.title
         p.classList.add("card-body")
 
         card.appendChild(cardBanner)
         card.appendChild(h2)
         card.appendChild(p)
 
-        displayIdeasHere.appendChild(card)
+        displayCards.appendChild(card)
+        console.log(displayCards)
     }
-    if (ideasArray.length > 0){
-        displayIdeasHere.classList.remove("hidden")
-    } else {
-        displayIdeasHere.classList.add("hidden")
-    } 
+    hideCard(displayCards);
 }
 
-
-
-// function removeInputs(title,body) {
-//     title.classList.add('hidden');
-//     body.classList.add('hidden');
-// }
-//1. function should display card and hide the user input.values title and body
-//2. add condition, if title.value = "" and body.value = ""
-//Disable Save button.... should hide the original button and other one should 
-//appear the other one, and no card should appear
-
-
-//iteration 1:
-// When a user fills out both inputs and clicks “Save”: a new idea should be added to the data model. => function addNewItem(newIdea)
-// a card should appear on the screen to match the comp above. The card should show the title and body the user entered into the form.
-// the form inputs should clear out to be ready for the next idea.
-// When a user tries to click “Save” with an empty Title or Body input field:
-// the “Save” button is disabled and unable to be clicked. It’s clear to the user when the button is disabled because it is a lighter color and the cursor is not a pointer when they hover over it.
-// a new idea card should not appear.
-// Notes:
-// You can choose what the layout looks like if more then 3 cards are added.
-// You can choose how to handle titles and bodies that are longer than what fits on the card. There are lots of ways to handle this.
-
-//1. function should display card and hide the user input.values title and body
-//2. add condition, if title.value = "" and body.value = ""
-//Disable Save button.... should hide the original button and other one should 
-//appear the other one, and no card should appear
-
-//iteration 0: Basic Layout
-// When the page loads, we should see: a title, two inputs, and a button, a page layout and colors that match the comp above. When a user clicks "Save," a new idea object should be created and logged to the console. The idea object should have: title body id. Every time a new idea is created, it should be added to a list that represents your data model.
-
-// 1. query select
-// 1.5. object includes title, body, id
-// 2. when clicked = new object should be created and logged to console - maybe array stores object??
-// 3. Every time new idea created, save button clicked, should add to you data model array.
-
-//query select:
-//save button, add event listener 'click', 
-//title user input so we can access user input
-//body user input so we can access user input in event listener
-
-//should create event listeners and include in event listener:
-//that once clicked, will access user input.value for title and body and pass it in object.
-//function should create an object with title, body and id, using title and body from userinput passing through
-//function should add new idea to data model (variable), everytime event occurs
-  //---for this should have a global variable = [] as data model
-//function should show newIdea you created!
-
-//for function showNewIdea() pseudocode
-////add HTML to JS
-    //find where you want to add the section/article
-    //query Select that
-    //displayIdeasHere.document.querySelector('.bottom-section')
-    //then to change this you want to innerText.. or HTML?
+function hideCard(displayCards) {
+    if (ideasArray.length > 0){
+        displayCards.classList.remove("hidden")
+    } else {
+        displayCards.classList.add("hidden")
+    } 
+}

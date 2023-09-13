@@ -104,8 +104,17 @@ form {
     cursor: not-allowed;
  }
 
- .hidden {
-    display: none;
+ .card-grid {
+    display: flex;
+ }
+
+ .star {
+    content: "&#9733";
+    color: white !important;
+ }
+
+ .other-star {
+    color: orange;
  }
 
  .card-grid{
@@ -147,7 +156,18 @@ form {
    margin:0
  }
 
- .card-title,
- .card-body{
-   display:flex
+ .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .hide-card-grid {
+    background-color: white;
+ }
+
+ .hidden {
+    display: none;
  }
