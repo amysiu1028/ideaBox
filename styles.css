@@ -1,3 +1,12 @@
+
+
+
+/* Colors:
+Dark Purple: #1F1F3C
+Medium Purple: #A8AAD2
+Light Purple: #EAEAF4
+White: #FFFFFF */
+
 * {
    margin: 0;
    padding: 0;
@@ -13,54 +22,25 @@ body {
 .main-header {
    display: flex;
    flex-direction: column;
-}
-
-.left-sections {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.idea-box {
-    color: #EAEAF4;
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 50px;
- }
- 
- .starred-button {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 50px;
- }
-
-.right-section {
-    width: 100%;
-    height: 100%;
-}
+   justify-content: flex-start; 
+   align-items: center; 
+   background-color: #1F1F3C;
+   color:#EAEAF4;
+   font-size: 2.5vw;
+   font-weight: 700;
+   height: 100vh;
+   width: 25vw;
+   gap: 1.5vh;
+} 
 
 .show-starred-ideas {
     background-color: #A8AAD2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.box-border {
+    border: 0.5vw solid #A8AAD2;
     color: #1F1F3C;
-    border-width: 3px;
-    width: 75%;
-
-}
-
-.save-button {
-    color: #EAEAF4;
-    background: #1F1F3C;
-    padding: 1%;
-    width: 75%;
-    text-align: center;
+    font-weight: 600;
+    font-size: 1.7vw;
+    width: 20vw;
+    height: 7vh;
 }
 
 form {
@@ -118,5 +98,21 @@ form {
    width: 50vw;
    height: 8vh;
    margin-left: 5.7vw; 
-   cursor:pointer;
+   cursor: pointer;
 }
+
+
+.other-save-button {
+    background-color: #A8AAD2;
+    border: 0.25vw solid #1F1F3C;
+    color: #EAEAF4;
+    font-size: 2.25vw;
+    width: 50vw;
+    height: 8vh;
+    margin-left: 5.7vw; 
+    cursor: not-allowed;
+ }
+
+ .hidden {
+    display: none;
+ }
