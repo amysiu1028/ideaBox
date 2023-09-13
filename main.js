@@ -1,3 +1,4 @@
+
  //querySelectors:
 var saveButton = document.querySelector('.save-button');// var userBodyInput = document.getElementById('input-body');
 var otherSaveButton = document.querySelector('.other-save-button')
@@ -128,4 +129,3 @@ function deleteCard(ideasArray) {
         }
     }
     return ideasArray
-}
