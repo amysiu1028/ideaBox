@@ -129,3 +129,4 @@ function deleteCard(ideasArray) {
         }
     }
     return ideasArray
+}
