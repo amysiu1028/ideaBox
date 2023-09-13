@@ -1,19 +1,20 @@
 //querySelectors:
 var saveButton = document.querySelector('.save-button');
-var userTitleInput = document.getElementById('input-title');
-var userBodyInput = document.getElementById('input-body');
+var inputTitle = document.getElementById('input-title');
+var inputBody = document.getElementById('input-body');
 var displayIdeasHere = document.querySelector('.card-grid')
 //Variables:
 var ideas = []
+
+// var id = Date.now()
 
 //addEventListeners:
 // window.addEventListener('load',);
 saveButton.addEventListener('click', function(event) { //invoke after click
     event.preventDefault();
-    var title = userTitleInput.value; //capture the user value for title when button is clicked
-    var body = userBodyInput.value;
+    var title = inputTitle.value; //capture the user value for title when button is clicked
+    var body = inputBody.value;
     var newIdea = createNewIdea(title,body);
-    addNewIdea(newIdea);
     showNewIdea(title,body);
     // removeInputs(title,body);
 });
@@ -22,10 +23,6 @@ saveButton.addEventListener('click', function(event) { //invoke after click
 var ideasArray = []
 var FavoriteIdeas = []
 
-var inputTitle = document.getElementById("input-title").value 
-var inputBody = document.getElementById("input-body").value
-var id = Date.now()
-
 function createNewIdea(title,body){
     var newIdea = {
         title:title,
@@ -33,13 +30,8 @@ function createNewIdea(title,body){
         id:Date.now()
     }
     ideasArray.push(newIdea)
-    input-title.value = ""
-    input-body.value = ""
-}
-function addNewIdea(newIdea) {  
-    ideas.push(newIdea)
-    console.log(ideas, "ideas")
-    return ideas
+    inputTitle.value = ""
+    inputBody.value = ""
 }
 
 function showNewIdea(title,body) {
