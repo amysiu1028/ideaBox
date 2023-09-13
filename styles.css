@@ -13,25 +13,54 @@ body {
 .main-header {
    display: flex;
    flex-direction: column;
-   justify-content: flex-start; 
-   align-items: center; 
-   background-color: #1F1F3C;
-   color:#EAEAF4;
-   font-size: 2.5vw;
-   font-weight: 700;
-   height: 100vh;
-   width: 25vw;
-   gap: 1.5vh;
-} 
+}
+
+.left-sections {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.idea-box {
+    color: #EAEAF4;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 50px;
+ }
+ 
+ .starred-button {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 50px;
+ }
+
+.right-section {
+    width: 100%;
+    height: 100%;
+}
 
 .show-starred-ideas {
     background-color: #A8AAD2;
-    border: 0.5vw solid #A8AAD2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.box-border {
     color: #1F1F3C;
-    font-weight: 600;
-    font-size: 1.7vw;
-    width: 20vw;
-    height: 7vh;
+    border-width: 3px;
+    width: 75%;
+
+}
+
+.save-button {
+    color: #EAEAF4;
+    background: #1F1F3C;
+    padding: 1%;
+    width: 75%;
+    text-align: center;
 }
 
 form {
