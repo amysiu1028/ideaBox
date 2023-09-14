@@ -62,11 +62,12 @@ function showIdeas(){
 
         var starButton = document.createElement("button")
         starButton.classList.add("star-button")
-        starButton.innerHTML = '<img src="/assets/star.svg" alt="Star Icon">'; 
+        starButton.innerHTML = '<img src="assets/star.svg" alt="Star Icon">'; 
 
         var removeButton = document.createElement("button")
         removeButton.classList.add("remove-button")
-        removeButton.innerHTML = '<img src="/assets/delete.svg" alt="Delete Icon">'; 
+        removeButton.innerHTML = '<img src="assets/delete.svg" alt="Delete Icon">'; 
+        
 
         cardBanner.appendChild(starButton)
         cardBanner.appendChild(removeButton)
@@ -115,18 +116,23 @@ saveButton.addEventListener("mouseout", function() {
 })
 
 
-//iteration 2: starting! BUt not sure what to do.... 
-//when user clicks delete button
 var removeButton = document.querySelector('.remove-button')
 
-//add event
-removeButton.addEventListener('click', deleteCard)
-//function should delete card user clicks card
-function deleteCard(ideasArray) {
-    for (var i=0; i<ideasArray.length;i++) {
-        if ('click') {
-            ideasArray.splice(i)
+//document goes through entire document
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('remove-button'))
+    var index = -1
+    var cards = document.querySelectorAll('.card'); //this creates a nodeList of all cards
+    var card = event.target.closest('.card'); //DOM/document element
+    //create for loop to iterate through nodeList:
+    for (var i=0; i<cards.length;i++) {
+        if (cards[i] === card) { //if cards[i] === to card we want to delete, then we'll find the index
+            index = i;
+            break;
         }
     }
-    return ideasArray
-}
+    if (index !== -1) {
+        ideasArray.splice(i,1); //update data model
+        card.remove();
+    }
+});
