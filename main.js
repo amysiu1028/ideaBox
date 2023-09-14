@@ -1,10 +1,11 @@
 
- //querySelectors:
+//querySelectors:
 var saveButton = document.querySelector('.save-button');// var userBodyInput = document.getElementById('input-body');
 var otherSaveButton = document.querySelector('.other-save-button')
 var inputTitle = document.getElementById("input-title")
 var inputBody = document.getElementById("input-body")
 var displayCards = document.querySelector('.card-grid')
+var bottomSection = document.querySelector('.bottom-section')
 
 //Variables: 
 var ideasArray = []
@@ -64,9 +65,9 @@ function showIdeas(){
         starButton.classList.add("star-button")
         starButton.innerHTML = '<img src="assets/star.svg" alt="Star Icon">'; 
 
-        var removeButton = document.createElement("button")
+            var removeButton = document.createElement("button")
         removeButton.classList.add("remove-button")
-        removeButton.innerHTML = '<img src="assets/delete.svg" alt="Delete Icon">'; 
+        removeButton.innerHTML = '<img class="remove-img" src="assets/delete.svg" alt="Delete Icon">'; 
         
 
         cardBanner.appendChild(starButton)
@@ -116,24 +117,24 @@ saveButton.addEventListener("mouseout", function() {
 })
 
 
-var removeButton = document.querySelector('.remove-button')
 
 //document goes through entire document
-document.addEventListener('click', function(event) {
-    if (event.target.classList.contains('remove-button'))
-    var index = -1
-    var cards = document.querySelectorAll('.card'); //this creates a nodeList of all cards
-    var card = event.target.closest('.card'); //can target by closest HTML TAG or class/id - DOM/document element
-    //create for loop to iterate through nodeList:
-    for (var i=0; i<cards.length;i++) {
-        if (cards[i] === card) { //if cards[i] === to card we want to delete, then we'll find the index
-            index = i;
-            break;
+bottomSection.addEventListener('click', function(event) {
+    if (event.target.classList.contains('remove-img')) {
+        var index = -1
+        var cards = document.querySelectorAll('.card'); //this creates a nodeList of all cards
+        var card = event.target.closest('.card'); //can target by closest HTML TAG or class/id - DOM/document element
+        //create for loop to iterate through nodeList:
+        for (var i=0; i<cards.length;i++) {
+            if (cards[i] === card) { //if cards[i] === to card we want to delete, then we'll find the index
+                index = i;
+                break;
+            }
         }
-    }
-    if (index !== -1) {
-        ideasArray.splice(i,1); //update data model
-        card.remove();
+        if (index !== -1) {
+            ideasArray.splice(i,1); //update data model
+            card.remove();
+        }
     }
 });
 
