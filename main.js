@@ -115,32 +115,23 @@ saveButton.addEventListener("mouseout", function() {
 })
 
 
-//iteration 2: starting! BUt not sure what to do.... 
-//when user clicks delete button
 var removeButton = document.querySelector('.remove-button')
-console.log(removeButton)
 
-//add event
-removeButton.addEventListener('click', function() {
-    console.log("Hi 1")
-});
-//function should delete card user clicks card
-//if I click image, then remove entire idea card
-
-function deleteCard(event) {
-    // update data model = ideasArray
-    // update DOM = innerHTML?
-
-    for (var i=0; i<ideasArray.length;i++) {
-        console.log("Hi")
-        if (event.target.classList.contains('.remove-button')) {
-            ideasArray.splice(i,1); //update datamodel
-            event.target.closest('.card').remove();
+//document goes through entire document
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('remove-button'))
+    var index = -1
+    var cards = document.querySelectorAll('.card'); //this creates a nodeList of all cards
+    var card = event.target.closest('.card'); //DOM/document element
+    //create for loop to iterate through nodeList:
+    for (var i=0; i<cards.length;i++) {
+        if (cards[i] === card) { //if cards[i] === to card we want to delete, then we'll find the index
+            index = i;
+            break;
         }
     }
-    removeButton.innerHTML = "" //can target closest class or class element
-    // var card = document.querySelector('.card')
-    // card.innerHTML =  .remove()//update DOM
-    // return ideasArray
-}
-
+    if (index !== -1) {
+        ideasArray.splice(i,1); //update data model
+        card.remove();
+    }
+});
