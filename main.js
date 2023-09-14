@@ -96,22 +96,22 @@ function hideCard(displayCards) {
         displayCards.classList.add("hidden")
     } 
 }
-//hovering over: mouseover, mouseleave
-
-saveButton.addEventListener("mouseover", function() {
+//hovering over: mouseover/mouseout or mouseenter/mouseleave
+//all interchangeable
+saveButton.addEventListener("mouseenter", function() {
     var title = inputTitle.value
     var body = inputBody.value
     if (!title && !body) {
-        saveButton.classList.add("hidden")
-        otherSaveButton.classList.toggle("hidden")
+        saveButton.style.background = '#A8AAD2'
         saveButton.style.cursor = 'not-allowed';
-    } 
+    } else {
+        saveButton.style.background = '#1F1F3C'
+        saveButton.style.cursor = 'pointer';
+    }
 })
 
 saveButton.addEventListener("mouseout", function() {
-    saveButton.classList.remove("hidden");
-    otherSaveButton.classList.add("hidden");
-    saveButton.style.cursor = 'pointer';
+    saveButton.style.background = '#1F1F3C'
 })
 
 
@@ -122,7 +122,7 @@ document.addEventListener('click', function(event) {
     if (event.target.classList.contains('remove-button'))
     var index = -1
     var cards = document.querySelectorAll('.card'); //this creates a nodeList of all cards
-    var card = event.target.closest('.card'); //DOM/document element
+    var card = event.target.closest('.card'); //can target by closest HTML TAG or class/id - DOM/document element
     //create for loop to iterate through nodeList:
     for (var i=0; i<cards.length;i++) {
         if (cards[i] === card) { //if cards[i] === to card we want to delete, then we'll find the index
@@ -135,3 +135,19 @@ document.addEventListener('click', function(event) {
         card.remove();
     }
 });
+
+//iteration 3:
+//when user clicks star, function should update data model, add into favorite array. 
+//in click, hide white star 
+//toggle orange star
+//if orange -> favorited -> add to favorite array
+
+var starButton = document.querySelector('.star-button')
+document.addEventListener('click',function(event) {
+    if (event.target.classList.contains('save-button'))
+    var cards = document.querySelectorAll('.card')
+    card = event.target.closest('.card') //find closest card class
+    for (var i=0; i<cards.length;i++) {
+
+    }
+})

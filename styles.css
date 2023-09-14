@@ -89,7 +89,6 @@ form {
    width: 50vw;
    height: 8vh;
    margin-left: 5.7vw; 
-   cursor: pointer;
 }
 
 
@@ -101,7 +100,6 @@ form {
     width: 50vw;
     height: 8vh;
     margin-left: 5.7vw; 
-    cursor: not-allowed;
  }
 
  .card-grid {
