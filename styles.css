@@ -106,13 +106,22 @@ form {
     display: flex;
  }
 
- .star {
-    content: "&#9733";
-    color: white !important;
+ .white-star {
+   background-image: url(assets/star.svg);
+   background-color: transparent;
+   height: 5vh;
+   width: 5vw;
+   border: none;
+   background-repeat: no-repeat;
  }
 
- .other-star {
-    color: orange;
+ .orange-star {
+   background-image: url(assets/star-active.svg); 
+   background-color: transparent;
+   height: 5vh;
+   width: 5vw;
+   border: none;
+   background-repeat: no-repeat;
  }
 
  .card-grid{
