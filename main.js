@@ -4,6 +4,7 @@ var inputTitle = document.getElementById("input-title");
 var inputBody = document.getElementById("input-body");
 var displayCards = document.querySelector('.card-grid');
 var bottomSection = document.querySelector('.bottom-section');
+var showStarredIdeasButton = document.querySelector('.show-starred-ideas')
 
 // Variables:
 var ideasArray = [];
@@ -148,6 +149,21 @@ bottomSection.addEventListener('click', function (event) {
         if (index !== -1) {
             ideasArray.splice(index, 1);
             card.remove();
+        }
+    }
+});
+
+showStarredIdeasButton.addEventListener('click', function () {
+    var cards = document.querySelectorAll('.card');
+
+    for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var starButton = card.querySelector('.star-button');
+        
+        if (!starButton || !starButton.querySelector('.other-star')) {
+            card.style.display = 'none';
+        } else {
+            card.style.display = 'flex'
         }
     }
 });
