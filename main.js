@@ -6,6 +6,7 @@ var displayCards = document.querySelector('.card-grid');
 var bottomSection = document.querySelector('.bottom-section');
 var showStarredIdeasButton = document.querySelector('.show-starred-ideas')
 var showAllIdeasButton = document.querySelector(".show-all-ideas")
+var showAllIdeasButton = document.querySelector(".show-all-ideas")
 
 // Variables:
 var ideasArray = [];
@@ -17,6 +18,7 @@ function createNewIdea(title, body) {
     var newIdea = {
         title: title,
         body: body,
+        id: id};
         id: id};
     ideasArray.push(newIdea);
 }
@@ -156,17 +158,27 @@ showStarredIdeasButton.addEventListener('click', function () {
     var cards = document.querySelectorAll('.card');
     showAllIdeasButton.classList.remove("hidden")
     showStarredIdeasButton.classList.add("hidden")
+    showAllIdeasButton.classList.remove("hidden")
+    showStarredIdeasButton.classList.add("hidden")
     for (var i = 0; i < cards.length; i++) {
         var card = cards[i];
         var starButton = card.querySelector('.star-button');
         
         if (!starButton.querySelector('.other-star')) {
+        if (!starButton.querySelector('.other-star')) {
             card.style.display = 'none';
         } else {
+            card.style.display = ""
             card.style.display = ""
         }
     }
 });
+
+showAllIdeasButton.addEventListener('click',function(){
+    showAllIdeasButton.classList.add("hidden")
+    showStarredIdeasButton.classList.remove("hidden")
+    showIdeas()
+})
 
 showAllIdeasButton.addEventListener('click',function(){
     showAllIdeasButton.classList.add("hidden")
