@@ -113,10 +113,54 @@ When a user tries to delete an idea, have them confirm that they really do want 
 Implement localStorage so the ideas persist on page load.
 Create a “Recently Deleted” filter that allows users to see their previously deleted ideas.
 
-reflections: 
+Abstract:
+This is a user-friendly app that … Users can … with the click of a button… Adding to the interactivity… The features included are:
+The ability to save ideas on indiviual cards
+The ability to favorite and sisplay only your favorite ideas
+The ability to delete the ideas you no longer want to have displayed
 
-future features:
+Installation Instructions:
+Git clone this repo to your local machine
+Cd into that directory
+Enter the command open index.html to open the browser
+Have fun looking
 
-other pertinent information:
+Preview of App:
+/ideaBox/assets/Screenshot 2023-09-15 at 4.20.12 PM (2).png
+
+Context:
+We spent a little bit of time all week working on the project. Between Bobby, Amy, and Lex we spent every night working from 7 to 10 at least, and 
+also worked a good amount in the mornings as well. Lunches were sacred but thanks to the extra work time we were allotted in the lessons this week, we were able to work at a fast pace. 
+
+Contributors:
+Lex: https://github.com/Jesuitman
 
 
+
+Learning Goals:
+Gain an understanding of how to write clean HTML and CSS to match a provided comp
+Understand how a developer might separate the data model from the DOM model
+Incorporate & iterate over arrays in order to filter what is being displayed
+Craft code with clean style, using small functions that show trends toward DRYness, SRP, and purity
+
+Wins + Challenges:
+Each one of us had our own wins in addition to collaborative wins!
+Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
+
+
+
+
+
+Observations & Questions
+Observations 
+Lex: this project was difficult but very fulfilling. the saying that you spend most of your time as a programmer confused and then get it and feel amazing definitely held true for this project. it featured very unique struggles but very satisfying wins. 
+
+Github Questions
+Lex: the major questions i had about github was just the workflow taht Nik helped to clarify, thank you for that Nik!
+
+Terminal Questions
+Lex: the big questions i have about terminal have been pretty successfully answered by bobby, and it was all about git workflow terminal commands
+
+Coding Questions
+Lex: I would love to find out how i could have shrunk down the show cards function, its kind of a massive beast and I couldnt think of a different way to 
+build it based on needing it to be dynamic with the DOM
