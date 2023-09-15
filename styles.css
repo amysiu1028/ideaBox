@@ -1,99 +1,88 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-body {
-   display: flex; 
-   font-family: 'Poppins', sans-serif;
-   background-color: #EAEAF4;
-}
-
-.main-header {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start; 
-   align-items: center; 
-   background-color: #1F1F3C;
-   color:#EAEAF4;
-   font-size: 2.5vw;
-   font-weight: 700;
-   height: 100vh;
-   width: 25vw;
-   gap: 1.5vh;
-} 
-
-.show-starred-ideas {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    display: flex; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAEAF4;
+ }
+ 
+ .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    background-color: #1F1F3C;
+    color:#EAEAF4;
+    font-size: 2.5vw;
+    font-weight: 700;
+    height: 100vh;
+    width: 25vw;
+    gap: 1.5vh;
+ } 
+ 
+ .show-starred-ideas {
+     background-color: #A8AAD2;
+     border: 0.5vw solid #A8AAD2;
+     color: #1F1F3C;
+     font-weight: 600;
+     font-size: 1.7vw;
+     width: 20vw;
+     height: 7vh;
+ }
+ 
+ form {
     background-color: #A8AAD2;
-    border: 0.5vw solid #A8AAD2;
     color: #1F1F3C;
-    font-weight: 600;
-    font-size: 1.7vw;
-    width: 20vw;
-    height: 7vh;
-}
-
-form {
-   background-color: #A8AAD2;
-   color: #1F1F3C;
-   font-weight: 300;
-   height: 50vh;
-   width: 75vw;
-   padding: 2vw 7vw;
-}
-
-.title-container {
-   display: flex;
-   justify-content: flex-start;
-   align-items: baseline;
-   gap: 0.75vw;
-   padding-bottom: 4vh;
-   margin-left: 0.9vw;
-} 
-
-.body-container {
-   display: flex;
-   justify-content: flex-start;
-   align-items: baseline;
-   gap: 0.75vw;
-   padding-bottom: 2vh;
-} 
-
-.title-input,
-.body-input {
-   font-size: 2vw;
-   background-color: #FFFFFF;
-   border: 0.3vw solid #1F1F3C;
-   width: 50vw;
-}
-
-.title-input {
-   height: 8vh;
-}
-
-.body-input {
-   height: 15vh;
-}
-
-.label {
-   font-size: 2vw;
-   font-weight: 300;
-}
-
-.save-button {
-   background-color: #1F1F3C;
-   border: 0.25vw solid #1F1F3C;
-   color: #EAEAF4;
-   font-size: 2.25vw;
-   width: 50vw;
-   height: 8vh;
-   margin-left: 5.7vw; 
-}
-
-
-.other-save-button {
-    background-color: #A8AAD2;
+    font-weight: 300;
+    height: 50vh;
+    width: 75vw;
+    padding: 2vw 7vw;
+ }
+ 
+ .title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0.75vw;
+    padding-bottom: 4vh;
+    margin-left: 0.9vw;
+ } 
+ 
+ .body-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0.75vw;
+    padding-bottom: 2vh;
+ } 
+ 
+ .title-input,
+ .body-input {
+    font-size: 2vw;
+    background-color: #FFFFFF;
+    border: 0.3vw solid #1F1F3C;
+    width: 50vw;
+ }
+ 
+ .title-input {
+    height: 8vh;
+ }
+ 
+ .body-input {
+    height: 15vh;
+ }
+ 
+ .label {
+    font-size: 2vw;
+    font-weight: 300;
+ }
+ 
+ .save-button {
+    background-color: #1F1F3C;
     border: 0.25vw solid #1F1F3C;
     color: #EAEAF4;
     font-size: 2.25vw;
@@ -101,75 +90,102 @@ form {
     height: 8vh;
     margin-left: 5.7vw; 
  }
-
- .card-grid {
+ 
+ 
+ .other-save-button {
+     background-color: #A8AAD2;
+     border: 0.25vw solid #1F1F3C;
+     color: #EAEAF4;
+     font-size: 2.25vw;
+     width: 50vw;
+     height: 8vh;
+     margin-left: 5.7vw; 
+  }
+ 
+  .card-grid {
+     display: flex;
+  }
+ 
+  .star {
+     content: "&#9733";
+     color: white !important;
+  }
+ 
+  .other-star {
+     color: orange;
+  }
+ 
+  .card-grid{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
  }
-
- .star {
-    content: "&#9733";
-    color: white !important;
- }
-
- .other-star {
-    color: orange;
- }
-
- .card-grid{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
-   width: 100%;
-   height: 100%;
-   padding: 2%;
-}
-
-.card {
-   border: 0.3vw solid #1F1F3C;
-   margin:1%;
-   padding: 1%;
-   width: 25%;
-   height: 3in;
-   position:relative
- }
-
- .card-banner{
-   background-color: #1F1F3C;
-   display: flex;
-   justify-content: space-between;
-   height: 20%;
-   position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
- }
-
- .star-button,
- .remove-button{
-   background:none;
-   border:none;
-   cursor:pointer;
-   width: 25%;
- }
-
- .remove-img, .star-img {
-   margin-bottom: 20%;
-   z-index: 20;
- }
-
+ 
  .card {
+    border: 0.3vw solid #1F1F3C;
+    margin:1%;
+    padding: 1%;
+    width: 25%;
+    height: 3in;
+    position:relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+  .card-banner{
+    background-color: #1F1F3C;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+ .card-body 
+ .card-title {
+    display: flex;
+    flex-direction: column;
+    text-wrap: text;
     align-items: center;
  }
+ 
+  .star-button,
+  .remove-button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    width: 25%;
+  }
+ 
+  .remove-img, .star-img {
+    margin-bottom: 20%;
+    z-index: 20;
+  }
+ 
+  .card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+ 
+ 
+  .hide-card-grid {
+     background-color: white;
+  }
+ 
+  .hidden {
+     display: none;
+  }
 
-
- .hide-card-grid {
-    background-color: white;
- }
-
- .hidden {
-    display: none;
- }
+/* @media only screen and (max-width 711px) {
+  /* target card, at this screen size we, want styling to be this */
