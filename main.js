@@ -16,9 +16,7 @@ function createNewIdea(title, body) {
     var newIdea = {
         title: title,
         body: body,
-        id: id,
-        favorited: false,
-    };
+        id: id};
     ideasArray.push(newIdea);
 }
 
@@ -160,10 +158,10 @@ showStarredIdeasButton.addEventListener('click', function () {
         var card = cards[i];
         var starButton = card.querySelector('.star-button');
         
-        if (!starButton || !starButton.querySelector('.other-star')) {
+        if (!starButton.querySelector('.other-star')) {
             card.style.display = 'none';
         } else {
-            card.style.display = 'flex'
+            card.style.display = ""
         }
     }
 });

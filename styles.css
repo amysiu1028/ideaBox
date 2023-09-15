@@ -32,6 +32,18 @@ body {
     font-size: 1.7vw;
     width: 20vw;
     height: 7vh;
+    cursor:pointer
+}
+
+.show-all-ideas{
+   background-color: #A8AAD2;
+   border: 0.5vw solid #A8AAD2;
+   color: #1F1F3C;
+   font-weight: 600;
+   font-size: 1.7vw;
+   width: 20vw;
+   height: 7vh;
+   cursor:pointer
 }
 
 form {
