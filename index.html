@@ -13,17 +13,18 @@
     <aside class="main-header">
         <h1 class="header-title">IdeaBox</h1>
         <button class="show-starred-ideas">Show Starred Ideas</button>
+        <button class="show-all-ideas hidden">Show All Ideas</button>
     </aside>
     <main>
         <section>
             <form class="idea-form">
                 <article class="title-container">
                     <label class="label" for="input-title">Title</label>
-                    <input class="title-input" type="text" id="input-title" name="input-title">
+                    <input class="title-input" type="text" id="input-title" name="input-title" maxlength="16">
                 </article>
                 <article class="body-container">
                     <label class="label" for="input-body">Body</label>
-                    <input class="body-input" type="text" id="input-body" name="input-body">
+                    <input class="body-input" type="text" id="input-body" name="input-body" maxlength="120">
                 </article>   
                     <button class="save-button">Save</button>
                     <!-- <button class="other-save-button hidden">Save</button> -->
