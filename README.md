@@ -35,7 +35,6 @@ Craft code with clean style, using small functions that show trends toward DRYne
 Each one of us had our own wins in addition to collaborative wins!
 
 Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
-Bobby: Wins - completing the project on time with a day to spare. Having our the application look like the comp! Building the HTML. Challenges - Getting stuck on the logic of the project at times, example: functionality when toggling the pages.
 
 Bobby: Wins - completing the project on time with a day to spare. Having our the application look like the comp! Building the HTML. Challenges - Getting stuck on the logic of the project at times, example: functionality when toggling the pages. 
 
