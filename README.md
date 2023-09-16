@@ -47,20 +47,21 @@ Lex: This project was difficult but very fulfilling. the saying that you spend m
 
 Bobby: I am happy with how the project went and am very thankful for my team, they are incredibly smart! I learned a lot and was able to apply a lot of things learned so far. 
 
-Amy: I definitely learned more from others, and learned how working with people is like for this project. I am learning that readability is key for helping code make sense in a team. 
+Amy: I definitely learned more from others, and learned how working with people is like for this project. I am learning that readability is key for helping code make sense in a team. In addition, I gained insight on what it's like working within this group and would work on expressing myself more and being more vocal when I have methods that are shorter to use like innerHTML or functions that are easier to read (seen one of the first branches I pushed up).
 
 Github Questions
 Lex: the major questions I had about github was just the workflow taht Nik helped to clarify, thank you for that Nik!
 Bobby: Thank you for the clarification, Nik.
+Amy: I'm very glad that Nik was able to check in with us and tell us that we are supposed to push to the most up to date version to main branch. That was what I originally thought because I had reviewed it with Travis. And since this was something I hadn't had a chance to do, I had met with Travis after my partner project to review this because I wanted to know.
 
 Terminal Questions
-Lex: The big questions I have about terminal have been pretty successfully answered by Bobby, and it was all about git workflow terminal commands
+Lex: The big questions I have about terminal have been pretty successfully answered by Bobby, and it was all about git workflow terminal commands.
+Amy: A lot of my terminal questions were confirmed by Nik, and answered by my software engineer friends. They showed me git rebase, and how to reverse a commit. I still am not too confident with merge conflicts on my local repo but I believe that is a mixture of me using git add . too much and with not knowing where the most up to date branch is and pulling that down with things I am also working on. This is an area I'd like to work on. 
 
 Coding Questions
 Lex: I would love to find out how I could have shrunk down the show cards function, it's kind of a massive beast and I couldnt think of a different way to build it based on needing it to be dynamic with the DOM.
 Bobby: Would also love to know! 
-Amy: I would love to find more CSS styles and rules on scroll. I played with it but had issues where I couldn't make it cross vertically and only horizontally.
-
+Amy: I would love to find more CSS styles and rules on scroll. I played with it but had issues where I couldn't make it cross vertically and only horizontally. I have mentioned innerHTML many times and how I used it in the beginning and how it can shrink the massive showAlert function. Again, I think innerHTML will do that and would love to learn how that would look like in possible future projects.
 
 # 💭 Pseudocode: 
 iterations:
