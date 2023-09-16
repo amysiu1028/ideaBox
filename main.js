@@ -175,3 +175,6 @@ showAllIdeasButton.addEventListener("click", function () {
   showStarredIdeasButton.classList.remove("hidden");
   showIdeas();
 });
+
+
+
