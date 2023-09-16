@@ -1,32 +1,68 @@
-# ideaBox
+# 💡 ideaBox
 
-Project: Group project for creating a website with a basic layout, where we will add ideas, delete ideas, favorite ideas, filter ideas, and add a search option for ideas (extensions), and possible optional extensions. More details on iterations below.
+✨ [Have fun!](https://amysiu1028.github.io/ideaBox/) ✨
 
-Setup instructions:
-By EOD on Kick Off Day: complete the following tasks:
+### 💭 Abstract:
+This is a user-friendly app where users can create, save, favorite and delete idea cards. There's an input field for the title and the body. When the user saves an idea, a card is generated lower down on the page with the custom idea. In the header of the card there is an "X" for the delete button and a star icon "☆" to add the card to their favorites. The user can see all the favorited ideas by clicking the "Show Starred Ideas" button. The same button toggles into the "Show All Ideas" and when click will show all of the ideas the user has generated! 
 
-As a team, complete the DTR Form
-Choose ONE TEAM MEMBER to do the following:
+### 💻 Installation instructions:
+To clone this repository and use on your local machine:
+* Fork this ideaBox repository
+* Clone down your new repository to your local machine
+* Cd into the repository on your local machine
+* Open the repository in your text editor
+* You will have access to the HTML, CSS, and JavaScript files
 
-Locally, create a new folder called ideaBox and add the following files to that folder: index.html, main.js, and styles.css. Create an assets folder where your icons will live (You can add them to this folder as you need them.)
-cd into the ideaBox directory and run git init to initialize git.
-Create an initial commit.
-On GitHub, create a new repository. Follow the written instructions on GitHub to add the repo’s remote to your local project, and push your initial commit up to GitHub.
-Add all project partners to the repository as contributors. If your repository is set to private, add your project manager as a collaborator as well.
-Complete this project submission form to ensure your project manager has the necessary links. Below are instuctions for deploying to GH Pages:
-Repo Settings » Pages » Select the main branch as your Source branch » Save. Then, wait up to an hour, hit refresh, and your deployed link should appear at the top of the screen.
-If you don’t want to wait, your GH pages URL will follow this format: https://username.github.io/ideaBox/ and replace username with the repo owner’s GH username and ideaBox with your repo’s name (if different). The URL will not work right away - that’s ok!
-Then, as a team:
+### 📷 Preview of App:
+[Live Github Link](https://amysiu1028.github.io/ideaBox/)
+<img width="1600" alt="Preview of ideaBox application" src="https://i.imgur.com/kKmkDW9.png">
 
-Have all team members clone down the repo.
-You’re ready to start iteration 0!
+### 🍎 Context:
+We spent a little bit of time all week working on the project. Between Bobby, Amy, and Lex we spent every night working from 7 to 10 at least, and also worked a good amount in the mornings as well. Lunches were sacred but thanks to the extra work time we were allotted in the lessons this week, we were able to work at a fast pace. 
 
-deploy link (gh-pages): https://amysiu1028.github.io/ideaBox/
+### 🧠 Contributors:
+- [Lex](https://github.com/Jesuitman)
+- [Amy](https://github.com/amysiu1028)
+- [Bobby](https://github.com/rsteckline)
 
-images or video of the functioning app: included in assets folder 
+### 🖇️ Learning Goals:
+Gain an understanding of how to write clean HTML and CSS to match a provided comp
+Understand how a developer might separate the data model from the DOM model
+Incorporate & iterate over arrays in order to filter what is being displayed
+Craft code with clean style, using small functions that show trends toward DRYness, SRP, and purity
 
-technologies used: HTML, JS, CSS
+### 🎆 Wins && 🔥 Challenges: 
+Each one of us had our own wins in addition to collaborative wins!
 
+Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
+
+Bobby: Wins - completing the project on time with a day to spare. Having our the application look like the comp! Building the HTML. Challenges - Getting stuck on the logic of the project at times, example: functionality when toggling the pages. 
+
+Amy: The biggest win I felt was 1. being able to start the initial layout of the HTML and build it all out challenges was figuring out the text box and card layout, and 2. writing out some of the initial functions for the first iteration on my own and then seeing it work and reflect what my teammate started made me happy! Challenge was having my innerHTML method brushed over because that would have shortened the function showAlerts. Other wins, was figuring out little things like the Save button toggle, and learning more about event delegation. Other challenges was, I knew that main branch was the source of truth and that in the tech world, everyone should push the most up to date version to main, so that other team members can pull the most up to date version down. So my challenge was finding where we had branches that were not pushed to main and pulling from the most up to date branch. In addition, this is the first time I was doing git fetch and pull since I didn't have that opporunity in my last group project. I had class but my partner in backend had a different way he used and it confused me. I came into this knowing that I may have some issues and glad they only came at the very end. And I'm glad to know how important it is to push up to main or let teammates know which exact branch it is they put the most up to date version because that really helps me as a teammate to pull from which branch.
+
+## 📝 Observations && ❓ Questions:
+Observations 
+Lex: This project was difficult but very fulfilling. the saying that you spend most of your time as a programmer confused and then get it and feel amazing definitely held true for this project. it featured very unique struggles but very satisfying wins. 
+
+Bobby: I am happy with how the project went and am very thankful for my team, they are incredibly smart! I learned a lot and was able to apply a lot of things learned so far. 
+
+Amy: I definitely learned more from others, and learned how working with people is like for this project. I am learning that readability is key for helping code make sense in a team. In addition, I gained insight on what it's like working within this group and would work on expressing myself more and being more vocal when I have methods that are shorter to use like innerHTML or functions that are easier to read (seen one of the first branches I pushed up).
+
+Github Questions
+Lex: the major questions I had about github was just the workflow taht Nik helped to clarify, thank you for that Nik!
+Bobby: Thank you for the clarification, Nik.
+Amy: I'm very glad that Nik was able to check in with us and tell us that we are supposed to push to the most up to date version to main branch. That was what I originally thought because I had reviewed it with Travis. And since this was something I hadn't had a chance to do, I had met with Travis after my partner project to review this because I wanted to know.
+
+Terminal Questions
+Lex: The big questions I have about terminal have been pretty successfully answered by Bobby, and it was all about git workflow terminal commands.
+Amy: A lot of my terminal questions were confirmed by Nik, and answered by my software engineer friends. They showed me git rebase, and how to reverse a commit. I still am not too confident with merge conflicts on my local repo but I believe that is a mixture of me using git add . too much and with not knowing where the most up to date branch is and pulling that down with things I am also working on. This is an area I'd like to work on. 
+
+Coding Questions
+Lex: I would love to find out how I could have shrunk down the show cards function, it's kind of a massive beast and I couldnt think of a different way to build it based on needing it to be dynamic with the DOM.
+Bobby: Would also love to know! 
+Amy: I would love to find more CSS styles and rules on scroll. I played with it but had issues where I couldn't make it cross vertically and only horizontally. I have mentioned innerHTML many times and how I used it in the beginning and how it can shrink the massive showAlert function. Again, I think innerHTML will do that and would love to learn how that would look like in possible future projects.
+
+# 💭 Pseudocode: 
 iterations:
 
 iteration 0: Basic Layout
@@ -112,11 +148,3 @@ Only allow unique ideas to be added.
 When a user tries to delete an idea, have them confirm that they really do want to delete it.
 Implement localStorage so the ideas persist on page load.
 Create a “Recently Deleted” filter that allows users to see their previously deleted ideas.
-
-reflections: 
-
-future features:
-
-other pertinent information:
-
-

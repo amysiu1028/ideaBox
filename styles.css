@@ -118,6 +118,11 @@ form {
     display: flex;
  }
 
+ .card-body,
+ .card-title {
+   text-align: center;
+ }
+
  .star {
     content: "&#9733";
     color: white !important;
@@ -156,32 +161,31 @@ form {
     right: 0;
 
  }
-
- .star-button,
- .remove-button{
-   background:none;
-   border:none;
-   cursor:pointer;
-   width: 25%;
- }
-
- .remove-img, .star-img {
-   margin-bottom: 20%;
-   z-index: 20;
- }
-
- .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-
-
- .hide-card-grid {
-    background-color: white;
- }
-
- .hidden {
-    display: none;
- }
+ 
+  .star-button,
+  .remove-button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    width: 25%;
+  }
+ 
+  .remove-img, .star-img {
+    margin-bottom: 20%;
+    z-index: 20;
+  }
+ 
+  .card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+ 
+ 
+  .hide-card-grid {
+     background-color: white;
+  }
+ 
+  .hidden {
+     display: none;
+  }
