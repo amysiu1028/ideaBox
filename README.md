@@ -33,14 +33,18 @@ Craft code with clean style, using small functions that show trends toward DRYne
 
 ### 🎆 Wins && 🔥 Challenges: 
 Each one of us had our own wins in addition to collaborative wins!
+
 Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
 Bobby: Wins - completing the project on time with a day to spare. Having our the application look like the comp! Building the HTML. Challenges - Getting stuck on the logic of the project at times, example: functionality when toggling the pages.
+
 Amy: The biggest win I felt was 1. being able to start the initial layout of the HTML and build it all out challenges was figuring out the text box and card layout, and 2. writing out some of the initial functions for the first iteration on my own and then seeing it work and reflect what my teammate started made me happy! Challenge was having my innerHTML method brushed over because that would have shortened the function showAlerts. Other wins, was figuring out little things like the Save button toggle, and learning more about event delegation. Other challenges was, I knew that main branch was the source of truth and that in the tech world, everyone should push the most up to date version to main, so that other team members can pull the most up to date version down. So my challenge was finding where we had branches that were not pushed to main and pulling from the most up to date branch. In addition, this is the first time I was doing git fetch and pull since I didn't have that opporunity in my last group project. I had class but my partner in backend had a different way he used and it confused me. I came into this knowing that I may have some issues and glad they only came at the very end. And I'm glad to know how important it is to push up to main or let teammates know which exact branch it is they put the most up to date version because that really helps me as a teammate to pull from which branch.
 
 ## 📝 Observations && ❓ Questions:
 Observations 
 Lex: This project was difficult but very fulfilling. the saying that you spend most of your time as a programmer confused and then get it and feel amazing definitely held true for this project. it featured very unique struggles but very satisfying wins. 
+
 Bobby: I am happy with how the project went and am very thankful for my team, they are incredibly smart! I learned a lot and was able to apply a lot of things learned so far. 
+
 Amy: I definitely learned more from others, and learned how working with people is like for this project. I am learning that readability is key for helping code make sense in a team. 
 
 Github Questions
