@@ -1,32 +1,60 @@
-# ideaBox
+### 💡 ideaBox
 
-Project: Group project for creating a website with a basic layout, where we will add ideas, delete ideas, favorite ideas, filter ideas, and add a search option for ideas (extensions), and possible optional extensions. More details on iterations below.
+### 💭 Abstract:
+This is a user-friendly app where users can create, save, favorite and delete idea cards. There's an input field for the title and the body. When the user saves an idea, a card is generated lower down on the page with the custom idea. In the header of the card there is an "X" for the delete button and a star icon "☆" to add the card to their favorites. The user can see all the favorited ideas by clicking the "Show Starred Ideas" button. The same button toggles into the "Show All Ideas" and when click will show all of the ideas the user has generated! 
 
-Setup instructions:
-By EOD on Kick Off Day: complete the following tasks:
+### 💻 Installation instructions:
+To clone this repository and use on your local machine:
+* Fork this ideaBox repository
+* Clone down your new repository to your local machine
+* Cd into the repository on your local machine
+* Open the repository in your text editor
+* You will have access to the HTML, CSS, and JavaScript files
 
-As a team, complete the DTR Form
-Choose ONE TEAM MEMBER to do the following:
+### 📷 Preview of App:
+[Live Github Link](https://amysiu1028.github.io/ideaBox/)
+<img width="1600" alt="Preview of ideaBox application" src="https://i.imgur.com/kKmkDW9.png">
 
-Locally, create a new folder called ideaBox and add the following files to that folder: index.html, main.js, and styles.css. Create an assets folder where your icons will live (You can add them to this folder as you need them.)
-cd into the ideaBox directory and run git init to initialize git.
-Create an initial commit.
-On GitHub, create a new repository. Follow the written instructions on GitHub to add the repo’s remote to your local project, and push your initial commit up to GitHub.
-Add all project partners to the repository as contributors. If your repository is set to private, add your project manager as a collaborator as well.
-Complete this project submission form to ensure your project manager has the necessary links. Below are instuctions for deploying to GH Pages:
-Repo Settings » Pages » Select the main branch as your Source branch » Save. Then, wait up to an hour, hit refresh, and your deployed link should appear at the top of the screen.
-If you don’t want to wait, your GH pages URL will follow this format: https://username.github.io/ideaBox/ and replace username with the repo owner’s GH username and ideaBox with your repo’s name (if different). The URL will not work right away - that’s ok!
-Then, as a team:
+### 🍎 Context:
+We spent a little bit of time all week working on the project. Between Bobby, Amy, and Lex we spent every night working from 7 to 10 at least, and also worked a good amount in the mornings as well. Lunches were sacred but thanks to the extra work time we were allotted in the lessons this week, we were able to work at a fast pace. 
 
-Have all team members clone down the repo.
-You’re ready to start iteration 0!
+### 🧠 Contributors:
+- [Lex](https://github.com/Jesuitman)
+- [Amy](https://github.com/amysiu1028)
+- [Bobby](https://github.com/rsteckline)
 
-deploy link (gh-pages): https://amysiu1028.github.io/ideaBox/
+### 🖇️ Learning Goals:
+Gain an understanding of how to write clean HTML and CSS to match a provided comp
+Understand how a developer might separate the data model from the DOM model
+Incorporate & iterate over arrays in order to filter what is being displayed
+Craft code with clean style, using small functions that show trends toward DRYness, SRP, and purity
 
-images or video of the functioning app: included in assets folder 
+### 🎆 Wins && 🔥 Challenges:
+Each one of us had our own wins in addition to collaborative wins!
+Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
+Bobby: Wins - completing the project on time with a day to spare. Having our the application look like the comp! Building the HTML. Challenges - Getting stuck on the logic of the project at times, example: functionality when toggling the pages.
 
-technologies used: HTML, JS, CSS
 
+
+
+
+## 📝 Observations && ❓ Questions:
+Observations 
+Lex: This project was difficult but very fulfilling. the saying that you spend most of your time as a programmer confused and then get it and feel amazing definitely held true for this project. it featured very unique struggles but very satisfying wins. 
+Bobby: I am happy with how the project went and am very thankful for my team, they are incredibly smart! I learned a lot and was able to apply a lot of things learned so far. 
+
+Github Questions
+Lex: the major questions I had about github was just the workflow taht Nik helped to clarify, thank you for that Nik!
+Bobby: Thank you for the clarification, Nik.
+
+Terminal Questions
+Lex: The big questions I have about terminal have been pretty successfully answered by Bobby, and it was all about git workflow terminal commands
+
+Coding Questions
+Lex: I would love to find out how I could have shrunk down the show cards function, it's kind of a massive beast and I couldnt think of a different way to build it based on needing it to be dynamic with the DOM.
+Bobby: Would also love to know! 
+
+# 💭 Pseudocode: 
 iterations:
 
 iteration 0: Basic Layout
@@ -112,55 +140,3 @@ Only allow unique ideas to be added.
 When a user tries to delete an idea, have them confirm that they really do want to delete it.
 Implement localStorage so the ideas persist on page load.
 Create a “Recently Deleted” filter that allows users to see their previously deleted ideas.
-
-Abstract:
-This is a user-friendly app that … Users can … with the click of a button… Adding to the interactivity… The features included are:
-The ability to save ideas on indiviual cards
-The ability to favorite and sisplay only your favorite ideas
-The ability to delete the ideas you no longer want to have displayed
-
-Installation Instructions:
-Git clone this repo to your local machine
-Cd into that directory
-Enter the command open index.html to open the browser
-Have fun looking
-
-Preview of App:
-/ideaBox/assets/Screenshot 2023-09-15 at 4.20.12 PM (2).png
-
-Context:
-We spent a little bit of time all week working on the project. Between Bobby, Amy, and Lex we spent every night working from 7 to 10 at least, and 
-also worked a good amount in the mornings as well. Lunches were sacred but thanks to the extra work time we were allotted in the lessons this week, we were able to work at a fast pace. 
-
-Contributors:
-Lex: https://github.com/Jesuitman
-
-
-
-Learning Goals:
-Gain an understanding of how to write clean HTML and CSS to match a provided comp
-Understand how a developer might separate the data model from the DOM model
-Incorporate & iterate over arrays in order to filter what is being displayed
-Craft code with clean style, using small functions that show trends toward DRYness, SRP, and purity
-
-Wins + Challenges:
-Each one of us had our own wins in addition to collaborative wins!
-Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
-
-
-
-
-
-Observations & Questions
-Observations 
-Lex: this project was difficult but very fulfilling. the saying that you spend most of your time as a programmer confused and then get it and feel amazing definitely held true for this project. it featured very unique struggles but very satisfying wins. 
-
-Github Questions
-Lex: the major questions i had about github was just the workflow taht Nik helped to clarify, thank you for that Nik!
-
-Terminal Questions
-Lex: the big questions i have about terminal have been pretty successfully answered by bobby, and it was all about git workflow terminal commands
-
-Coding Questions
-Lex: I would love to find out how i could have shrunk down the show cards function, its kind of a massive beast and I couldnt think of a different way to 
-build it based on needing it to be dynamic with the DOM
