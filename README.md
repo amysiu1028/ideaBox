@@ -31,19 +31,19 @@ Understand how a developer might separate the data model from the DOM model
 Incorporate & iterate over arrays in order to filter what is being displayed
 Craft code with clean style, using small functions that show trends toward DRYness, SRP, and purity
 
-### 🎆 Wins && 🔥 Challenges:
+### 🎆 Wins && 🔥 Challenges: 
 Each one of us had our own wins in addition to collaborative wins!
 Lex: The biggest win i felt was when I got the functionality working for the show all ideas button following the show starred ideas button. 
 Bobby: Wins - completing the project on time with a day to spare. Having our the application look like the comp! Building the HTML. Challenges - Getting stuck on the logic of the project at times, example: functionality when toggling the pages.
-
-
-
+Amy: The biggest win I felt was being able to start the initial layout of the HTML, and writing out some of the initial functions for the first iteration on my own and then seeing it work and reflect what my teammate started made me happy! Others, was figuring out little things like the Save button toggle, and learning more about event delegation.
+Bobby: 
 
 
 ## 📝 Observations && ❓ Questions:
 Observations 
 Lex: This project was difficult but very fulfilling. the saying that you spend most of your time as a programmer confused and then get it and feel amazing definitely held true for this project. it featured very unique struggles but very satisfying wins. 
 Bobby: I am happy with how the project went and am very thankful for my team, they are incredibly smart! I learned a lot and was able to apply a lot of things learned so far. 
+Amy: I definitely learned more from others, and learned how working with people is like for this project. I am learning that readability is key for helping code make sense in a team. I'm glad to have worked with Bobby and Lex! 
 
 Github Questions
 Lex: the major questions I had about github was just the workflow taht Nik helped to clarify, thank you for that Nik!
@@ -55,6 +55,10 @@ Lex: The big questions I have about terminal have been pretty successfully answe
 Coding Questions
 Lex: I would love to find out how I could have shrunk down the show cards function, it's kind of a massive beast and I couldnt think of a different way to build it based on needing it to be dynamic with the DOM.
 Bobby: Would also love to know! 
+
+Amy: I would love to find more CSS styles and rules on scroll. I played with it but had issues where I couldn't make it cross vertically and only horizontally.
+Bobby:
+
 
 # 💭 Pseudocode: 
 iterations:
