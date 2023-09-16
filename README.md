@@ -1,4 +1,6 @@
-### 💡 ideaBox
+# 💡 ideaBox
+
+✨ [Have fun!](https://amysiu1028.github.io/ideaBox/) ✨
 
 ### 💭 Abstract:
 This is a user-friendly app where users can create, save, favorite and delete idea cards. There's an input field for the title and the body. When the user saves an idea, a card is generated lower down on the page with the custom idea. In the header of the card there is an "X" for the delete button and a star icon "☆" to add the card to their favorites. The user can see all the favorited ideas by clicking the "Show Starred Ideas" button. The same button toggles into the "Show All Ideas" and when click will show all of the ideas the user has generated! 
