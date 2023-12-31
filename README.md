@@ -13,8 +13,11 @@ To clone this repository and use on your local machine:
 * Open the repository in your text editor
 * You will have access to the HTML, CSS, and JavaScript files
 
-### 📷 Preview of App:
+
+## Link: 
 [Live Github Link](https://amysiu1028.github.io/ideaBox/)
+
+### 📷 Preview of App:
 <img width="1600" alt="Preview of ideaBox application" src="https://i.imgur.com/kKmkDW9.png">
 
 ### 🍎 Context:
